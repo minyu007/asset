@@ -1,0 +1,5 @@
+/* 所有屏幕尺寸 ，如果有small.css medium.css large.css等，不同分辨率下该样式会按照不同尺寸覆盖*/
+@media screen,
+projection {
+	
+}

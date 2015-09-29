@@ -1,0 +1,8 @@
+/* 当尺寸大于30em(480px,1em = 16px) */
+@media only screen and (min-width: 30em) {
+    
+}
+/* 当尺寸小于767px */
+@media only screen and (max-width: 767px) {
+    
+}
