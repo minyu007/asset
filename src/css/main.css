@@ -848,7 +848,9 @@ input[type=submit].btn-block {
         width: 1170px
     }
 }
-
+.forborder div{
+    border: 1px solid #000;
+}
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
