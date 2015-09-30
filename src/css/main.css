@@ -2767,7 +2767,9 @@ projection {
         vertical-align: middle;
         padding: 10px 0;
     }
-    
+    .masthead .navigation .primaryNav>li.ative{
+        border-bottom: 3px solid #d60000;
+    }
  
     .masthead .navigation .primaryNav>li a {
         /*border-left: 1px solid #d9d9d9;*/
