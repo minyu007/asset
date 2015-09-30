@@ -2223,7 +2223,7 @@ projection {
     }
     .bgCoverWrapper {
         position: relative;
-        z-index:2;
+        z-index: 2;
     }
     .heroArea {
         background: #007cc3 no-repeat right center;
@@ -2381,6 +2381,10 @@ projection {
         padding: 10px 20px 10px 20px;
         width: 389px;
     }
+    .masthead .topbarInner {
+        -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, .075);
+        box-shadow: inset inset 0 2px 2px rgba(0, 0, 0, .075);
+    }
     .masthead .topbarInner .searchArea {
         position: relative;
         top: 28px;
@@ -2449,8 +2453,8 @@ projection {
         left: 0;
         visibility: visible;
     }
-    body.mobileNavMoreOpen .masthead .navigation .navMore{
-        top: 41px;
+    body.mobileNavMoreOpen .masthead .navigation .navMore {
+        top: 44px;
         visibility: visible;
     }
     body.mobileNavOpen.animationClose .masthead .navigation .navContent {
@@ -2662,9 +2666,8 @@ projection {
         line-height: 22px;
         width: 100%;
     }
-    .masthead .navigation .navContent .mobileQuickMenu li:first-child  {
+    .masthead .navigation .navContent .mobileQuickMenu li:first-child {
         margin-top: 0px;
-    
     }
     .masthead .navigation .navContent .mobileQuickMenu li button {
         float: right;
@@ -2693,7 +2696,6 @@ projection {
     }
 }
 
-
 @media only screen and (min-width: 64em) {
     .masthead .navigation .navRow,
     .ie8 .masthead .navigation .navRow .contentWrapper {
@@ -2711,14 +2713,13 @@ projection {
         -o-transition: all 0.25s ease 0s;
         -ms-transition: all 0.25s ease 0s;
         transition: all 0.25s ease 0s;
-
-        text-shadow: 0 1px 0 rgba(0,0,0,.1);
+        text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
         background-color: #fbfbfb;
-        background-image: -webkit-gradient(linear,left top,left bottom,from(#BFBFBF),to(#fbfbfb));
-        background-image: -webkit-linear-gradient(top,#BFBFBF 0,#fbfbfb 100%);
-        background-image: -o-linear-gradient(top,#BFBFBF 0,#fbfbfb 100%);
-        background-image: linear-gradient(to bottom,#BFBFBF 0,#fbfbfb 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#BFBFBF', endColorstr='#fbfbfb', GradientType=0);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#BFBFBF), to(#fbfbfb));
+        background-image: -webkit-linear-gradient(top, #BFBFBF 0, #fbfbfb 100%);
+        background-image: -o-linear-gradient(top, #BFBFBF 0, #fbfbfb 100%);
+        background-image: linear-gradient(to bottom, #BFBFBF 0, #fbfbfb 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#BFBFBF', endColorstr='#fbfbfb', GradientType=0);
         background-repeat: repeat-x;
         border-bottom: 1px solid #d1d1d1;
         border-top: 1px solid #f7f7f7;
@@ -2727,7 +2728,6 @@ projection {
     .ie8 .masthead .navigation .navRow .contentWrapper {
         position: relative
     }
-   
     .masthead .navigation .navContent .navRow {
         position: static;
         overflow: visible;
@@ -2742,7 +2742,7 @@ projection {
         background-color: transparent;
         /*border-bottom: none;*/
         width: 100%;
-        z-index:2;
+        z-index: 2;
         overflow: visible;
         color: #333333;
         padding-top: 0;
@@ -2767,10 +2767,9 @@ projection {
         vertical-align: middle;
         padding: 10px 0;
     }
-    .masthead .navigation .primaryNav>li.ative{
+    .masthead .navigation .primaryNav>li.ative {
         border-bottom: 3px solid #d60000;
     }
- 
     .masthead .navigation .primaryNav>li a {
         /*border-left: 1px solid #d9d9d9;*/
     }
@@ -2793,18 +2792,16 @@ projection {
         -o-transition: all 0.25s ease 0s;
         -ms-transition: all 0.25s ease 0s;
         transition: all 0.25s ease 0s;
-        text-shadow: 0 1px 0 rgba(0,0,0,.1);
+        text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
         background-repeat: repeat-x;
         border-bottom: 1px solid #d1d1d1;
     }
-
     .masthead .navigation .navMore>li {
         float: left;
         width: 20%;
         vertical-align: middle;
         padding: 10px 0;
     }
-    
     .masthead .navigation .navMore>li a {
         /*border-left: 1px solid #d9d9d9;*/
     }
@@ -2819,7 +2816,6 @@ projection {
         -webkit-tap-highlight-color: transparent;
         /*font-weight: bold;*/
     }
-
     .masthead .navigation .navMore {
         box-sizing: border-box;
         width: 100%;
@@ -2830,17 +2826,18 @@ projection {
         visibility: hidden;
         top: -100%;
         position: absolute;
-        z-index:1;
-        height: 39px;
+        z-index: 1;
+        height: 42px;
         -moz-transition: top 0.2s ease 0s;
         -webkit-transition: top 0.2s ease 0s;
         -o-transition: top 0.2s ease 0s;
         -ms-transition: top 0.2s ease 0s;
         transition: top 0.2s ease 0s;
-        -webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,.075);
-        box-shadow: inset inset 0 2px 2px rgba(0,0,0,.075);
+        -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, .075);
+        box-shadow: inset inset 0 2px 2px rgba(0, 0, 0, .075);
     }
 }
+
 @media only screen and (min-width: 48em) {
     .masthead .navigation .primaryNav>li {
         float: left;
@@ -2849,12 +2846,10 @@ projection {
         vertical-align: middle;
         padding: 10px 0;
     }
-
     .masthead .navigation .primaryNav>li {
         width: 12.5%;
     }
 }
-
 
 @media only screen and (min-width: 64em) {
     .masthead .navigation .navContent {
@@ -2886,7 +2881,7 @@ projection {
         padding-bottom: 0;
         overflow: visible
     }
-    .masthead .navigation  .navRow {
+    .masthead .navigation .navRow {
         position: static;
         overflow: visible;
         /*padding: 0 28px;*/
