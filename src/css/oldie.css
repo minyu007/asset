@@ -441,7 +441,9 @@ th {
     display: block
 }
 
+
 /*oldie样式基本和xxx.defualt.css一致，请在ie中具体测试微调*/
+
 .masthead .topbar {
     position: relative;
     display: block;
@@ -553,7 +555,6 @@ th {
     width: 300px;
     margin-right: 25px;
     border: 1px solid #bcbdc0;
-
 }
 
 .masthead .topbarInner .searchArea a {
@@ -562,6 +563,7 @@ th {
     width: 38px;
     padding: 8px 0px 0px 10px;
 }
+
 
 /*.masthead .topbarInner .searchArea .btn .searchIcon {
     display: inline-block;
@@ -575,14 +577,15 @@ th {
     width: 21px;
     margin-top: 8px;
 }*/
+
 .masthead .topbarInner .searchArea .btn i {
     color: #fff;
 }
 
 .heroArea {
     background: #007cc3 no-repeat center center;
-
 }
+
 .heroArea .heroAreaContent {
     padding: 8px 14px 121px;
     color: #fff;
@@ -595,10 +598,69 @@ th {
     width: 594px;
     height: 100px;
 }
+
 .heroArea .font2 {
     background-image: url('../img/font2.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     width: 165px;
     height: 37px;
+}
+
+
+
+.masthead .navigation .navRow,
+.ie8 .masthead .navigation .navRow .contentWrapper {
+    position: relative;
+}
+
+.masthead .navigation .navContent .navRow {
+    overflow: visible;
+    background: #f1f1f1
+}
+
+.ie8 .masthead .navigation .navContent .navRow .contentWrapper {
+    background-color: #f1f1f1
+}
+
+.masthead .navigation .primaryNav {
+    margin: 0px;
+    float: left;
+    position: relative;
+    background-color: #f5f5f5;
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #d1d1d1;
+    border-top: 1px solid #f7f7f7;
+    width: 100%;
+    z-index: 2;
+    overflow: visible;
+    color: #333333;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: visible;
+}
+
+.ie6 .masthead .navigation .primaryNav,
+.ie7 .masthead .navigation .primaryNav {
+    zoom: 1
+}
+
+.masthead .navigation .primaryNav>li {
+    float: left;
+    width: 12.5%;
+    /* border-top: 5px solid transparent; */
+    vertical-align: middle;
+    padding: 20px 0;
+}
+
+.masthead .navigation .primaryNav>li a {
+    /*border-left: 1px solid #d9d9d9;*/
+}
+
+.masthead .navigation .primaryNav>li>a {
+    display: block;
+    box-shadow: none;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
 }
