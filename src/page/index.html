@@ -14,6 +14,7 @@
     <meta name="author" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../../bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="../css/font-awesome.css" />
     <!--[if (gt IE 8)|!(IE)]><!-->
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/index.default.css" />
@@ -56,19 +57,19 @@
                     <div class='topbarInner'>
                         <div class='contentWrapper'>
                             <div class='leftArea mobileOnly'>
-                                <a href='#' alt=""></a>
+                                <a href='#' alt=""><i class="fa fa-user fa-4x"></i></a>
                             </div>
                             <div class="logo">
                                 <a href='#' alt="" class="noOutline"></a>
                             </div>
                             <div class='searchArea hiddenInMobile'>
                                 <div class="placeHolderContainer">
-                                    <a class='btn button primary'><i class='searchIcon'></i></a>
+                                    <a class='btn button primary'><i class="fa fa-search fa-2x"></i></a>
                                     <input id="searchDesktop" class="noOutline " type="text" placeholder="请输入搜索内容">
                                 </div>
                             </div>
-                            <div class='rightArea mobileOnly'>
-                                <a href='#' alt=""></a>
+                            <div class='searchBtn mobileOnly'>
+                                <a href='#' alt=""><i class="fa fa-search fa-4x"></i></a>
                             </div>
                         </div>
                     </div>
@@ -83,10 +84,22 @@
                             </div>
                         </section>
                     </div>
+                </div>
+                <div class="searchMobile hiddenInDesktop">
+                    <div class='autoComplete'>
+                        <div class="searchIcon"><i class="fa fa-search fa-2x"></i></div>
+                        <label class="accessible" for="searchInputMobile">请输入搜索内容</label>
+                        <div>
+                            <input id="searchInputMobile" class="autoCompleteInput" type="text" placeholder="请输入搜索内容" role="combobox" aria-autocomplete="list" list="module-18" aria-owns="module-18" aria-expanded="false">
+                        </div>
+                    </div>
+                    <a href="#" class="close noOutline"><i class="fa fa-times fa-3x"></i><span class="accessible">close search panel</span></a>
+                </div>
             </nav>
         </header>
         <div class='content'></div>
         <footer></footer>
     </div>
+    <script data-main="../js/main" src="../../bower_components/requirejs/require.js"></script>
 </body>
 </html>

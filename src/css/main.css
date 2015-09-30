@@ -449,9 +449,44 @@ projection {
 
 @media screen,
 projection {
+    a[href],
+    input[type='submit'],
+    input[type='image'],
+    label[for],
+    select,
+    button,
+    .pointer {
+        cursor: pointer;
+    }
+}
+
+@media screen,
+projection {
+    .accessible {
+        position: absolute;
+        left: -9999px;
+    }
+}
+
+@media screen,
+projection p,
+address,
+li,
+dt,
+dd,
+legend,
+label,
+input,
+select,
+button,
+table {
+    font-size: 1.2em;
+}
+
+@media screen,
+projection {
     .contentWrapper {
         min-width: 300px;
-
         max-width: 1280px;
         margin: 0 auto;
     }
@@ -651,7 +686,7 @@ projection {
 
 @media screen,
 projection {
-    .masthead .topbarInner{
+    .masthead .topbarInner {
         position: relative;
         height: 100px;
     }
@@ -682,7 +717,7 @@ projection {
     .masthead .topbarInner .leftArea {
         float: left;
     }
-    .masthead .topbarInner .rightArea {
+    .masthead .topbarInner .searchBtn {
         float: right;
     }
     .masthead .topbar {
@@ -702,7 +737,6 @@ projection {
         padding: 8px 14px 121px;
         color: #fff
     }
-    
     .heroArea .font1 {
         background-image: url('../img/font1_small.png');
         background-position: 0 0;
@@ -723,19 +757,19 @@ projection {
     .heroArea .heroAreaContent {
         padding: 8px 20px 136px;
     }
-    
 }
+
 @media only screen and (max-width: 767px) {
     .masthead .topbarInner {
         border-bottom: 2px #e5e5e5 solid;
-        height: 72px;
+        height: 60px;
         width: 100%;
     }
     .masthead .topbarInner .logo {
         display: inline-block;
         margin: 0 auto;
         width: calc(100% - 104px);
-        padding: 10px 0px 10px 0px;
+        padding: 5px 0px 5px 0px;
     }
     .masthead .topbarInner .logo a {
         display: block;
@@ -751,34 +785,40 @@ projection {
     .masthead .topbarInner .leftArea {
         float: left;
         width: 52px;
-        padding: 15px 0px 10px 0px;
+        padding: 10px 0px 10px 15px;
     }
-    .masthead .topbarInner .rightArea {
+    .masthead .topbarInner .searchBtn {
         float: right;
         width: 52px;
-        padding: 15px 0px 10px 0px;
+        padding: 10px 0px 10px 0px;
     }
     .masthead .topbarInner .leftArea a {
         display: block;
         vertical-align: middle;
         content: '';
-        background-image: url('../img/icon/mobile_member.png');
+       /* background-image: url('../img/icon/mobile_member.png');
         background-position: 0 0;
         background-repeat: no-repeat;
         height: 36px;
-        width: 36px;
+        width: 36px;*/
         margin: auto auto;
     }
-    .masthead .topbarInner .rightArea a {
+    .masthead .topbarInner .leftArea a i{
+        color: #bbbbbb;
+    }
+    .masthead .topbarInner .searchBtn a {
         display: block;
         vertical-align: middle;
-        content: '';
+        /*content: '';
         background-image: url('../img/icon/mobile_search.png');
         background-position: 0 0;
         background-repeat: no-repeat;
         height: 36px;
-        width: 36px;
+        width: 36px;*/
         margin: auto auto;
+    }
+    .masthead .topbarInner .searchBtn a i{
+        color: #bbbbbb;
     }
 }
 
@@ -793,7 +833,6 @@ projection {
     .heroArea .heroAreaContent {
         padding: 20px 48px 147px
     }
-
     .masthead .topbar {
         position: relative;
         display: block;
@@ -840,7 +879,6 @@ projection {
     .masthead .topbar .links ul li.second {
         margin-right: 30px;
     }
-
     .masthead .topbarInner .logo {
         display: block;
         float: left;
@@ -870,18 +908,10 @@ projection {
         -webkit-border-bottom-right-radius: 4px;
         -moz-border-top-right-radius: 4px;
         -moz-border-bottom-right-radius: 4px;
+        padding: 8px 0px 0px 10px;
     }
-    .masthead .topbarInner .searchArea .btn .searchIcon {
-        display: inline-block;
-        margin-left: 10px;
-        vertical-align: middle;
-        content: '';
-        background-image: url('../img/icon/search.png');
-        background-position: 0 0;
-        background-repeat: no-repeat;
-        height: 21px;
-        width: 21px;
-        margin-top: 8px;
+    .masthead .topbarInner .searchArea .btn i {
+        color: #fff;
     }
 }
 
@@ -916,3 +946,115 @@ projection {
         width: 66.66667%
     }
 }
+
+@media screen, projection{
+body.mobileSearchOpen .searchMobile {
+    left: 0;
+    visibility: visible;
+}
+}
+@media screen,
+projection {.masthead .searchMobile {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transition: left 0.25s;
+    height: 54px;
+    width: 100%;
+    background-color: #007cc3;
+    padding: 10px 14px;
+    visibility: hidden;
+}
+}
+@media screen,
+projection {
+    .masthead .searchMobile {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        transition: left 0.25s;
+        height: 58px;
+        width: 100%;
+        background-color: #007cc3;
+        padding: 10px 14px;
+        visibility: hidden
+    }
+    .masthead .searchMobile .autoComplete {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 100%;
+        margin: 0 0;
+        padding-right: 45px;
+        box-sizing: border-box
+    }
+    .masthead .searchMobile .autoComplete .searchIcon {
+        position: absolute;
+        margin: 7px 0 0 9px;
+        content: '';
+        display: block;
+        float: left;
+        vertical-align: middle;
+
+        /*background-image: url('../img/icon/icons.png');
+        background-position: 0 -12343px;
+        background-repeat: no-repeat;*/
+        height: 23px;
+        width: 23px
+    }
+    .masthead .searchMobile .autoComplete .searchIcon i {
+        color: #bbbbbb;
+    }
+    
+}
+
+@media screen,
+projection {
+    .masthead .searchMobile input {
+        border: none;
+        width: 100%;
+        font-size: 1.8em;
+        padding: 8px 40px;
+        line-height: 20px;
+    }
+    .masthead .searchMobile a.close {
+        /*border: 6px solid transparent;*/
+        -webkit-box-sizing: initial;
+        -moz-box-sizing: initial;
+        box-sizing: initial;
+        position: absolute;
+        float: right;
+        cursor: pointer;
+        right: 20px;
+        top: 13px;
+        /*background-image: url('../img/icon/icons.png');
+        background-position: 0 -15871px;
+        background-repeat: no-repeat;*/
+        height: 22px;
+        width: 21px
+    }
+    .masthead .searchMobile a.close i{
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    .masthead .searchMobile a.close {
+        right: 25px
+    }
+}
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2 / 1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .masthead .searchMobile a.close {
+        background-position: 0 -7889px;
+        background-size: 106px auto
+    }
+    .masthead .searchMobile .autoComplete .searchIcon {
+        background-position: 0 -5976px;
+        background-size: 106px auto
+    }
+}*/

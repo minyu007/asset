@@ -1,11 +1,30 @@
-define([''], function(){
-	return {
-		doSomething: function(){
-			console.log('this is a function in app.js')
+'use strict';
+define(['jquery', 'fastclick'], function($, fastclick){
+	fastclick.attach(document.body);
+
+	var Dom = {
+		header: $('header'),
+		body: $('body')
+	}
+
+	var app =  {
+		init: function(){
+			this.toggleSearch();
 		},
 
-		others: function(){
-			console.log('this is the other functions in app.js')
+		toggleSearch: function(){
+			var searchBtn = Dom.header.find('.searchBtn'),
+				closeBtn = Dom.header.find('.searchMobile .close');
+			searchBtn.on('click', function(){
+				Dom.body.addClass('mobileSearchOpen');
+				
+			});
+			closeBtn.on('click', function(){
+				Dom.body.removeClass('mobileSearchOpen');
+			});
+
 		}
 	}
+	app.init();
+	return app;
 });

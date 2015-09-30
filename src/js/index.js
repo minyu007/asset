@@ -1,11 +1,8 @@
-define([''], function(){
-	return {
-		doSomething: function(){
-			console.log('this is a function in app.js')
+require(['../js/app'], function(app){
+	var index = {
+		init: function(){
+			app.toggleSearch()
 		},
 
-		others: function(){
-			console.log('this is the other functions in app.js')
-		}
 	}
 });
