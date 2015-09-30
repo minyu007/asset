@@ -1,3 +1,6 @@
+body {
+        overflow-x: hidden;
+    }
 @media screen,
 projection {
     html,
@@ -848,9 +851,7 @@ input[type=submit].btn-block {
         width: 1170px
     }
 }
-.forborder div{
-    border: 1px solid #000;
-}
+
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
@@ -2794,6 +2795,8 @@ projection {
         -o-transition: all 0.25s ease 0s;
         -ms-transition: all 0.25s ease 0s;
         transition: all 0.25s ease 0s;
+        background-color: #fff;
+        overflow: hidden;
         text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
         background-repeat: repeat-x;
         border-bottom: 1px solid #d1d1d1;
