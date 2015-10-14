@@ -49,12 +49,12 @@ $ cd asset && npm install && bower install
 ##### 目录结构
 
 ``` js
-- web/
+- asset/
   - src/                   # 开发目录
     + css/                 # css
     + scss/                # sass雪碧
     + img/                 # 图片
-    + js/				   # js&jsx
+    + js/		   # js
     + page/                # html页面
   congif.rb                # ruby配置
   bower.json               # bower配置
