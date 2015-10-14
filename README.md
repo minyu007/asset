@@ -54,7 +54,7 @@ $ cd asset && npm install && bower install
     + css/                 # css
     + scss/                # sass雪碧
     + img/                 # 图片
-    + js/		   # js
+    + js/                  # js
     + page/                # html页面
   congif.rb                # ruby配置
   bower.json               # bower配置
